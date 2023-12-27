@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+.root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    /* --padding-inlink-seaction: 20px; */
+}
+
+
+h3 {
+    z-index: 1;
+}
+
+p{
+    line-height: 1.4rem;
+    /* color:black; */
+    font-weight: 300;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    /* gap: 27px; */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1220px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    /* background-color: #f3faff; */
+    /* box-shadow: 0 0 4px #bbd0e2; */
+    background-color: rgba(128, 126, 126, 0.45);
+    background-color: #dbe8f3;
+    background-color: rgba(1, 1, 8, 0.6);
+    /* border: 2px solid rgb(255, 255, 255, .5); */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    right: 0;
+    left: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.company-logo img {
+    width: 56px;
+    margin-left: 30px;
+}
+
+.nav-links ul {
+    gap: 20px;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: rgb(60, 210, 170);
+    /* font-weight: bold; */
+}
+
+
+
+/* .hover-link:active {
+    color: #0fbef8;
+} */
+
+.nav-item.active {
+    color: rgb(60, 210, 170);
+}
+
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 180px;
+    height: 100%;
+    padding-inline: 10px;
+    border-radius: 5px;
+    border: 2px solid #bbd0e2;
+}
+
+.search-button {
+    background-color: #2294ed;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #1d69a3;
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.card-container {
+    position: relative;
+    justify-content: start;
+    flex-wrap: wrap;
+    z-index: 1;
+   
+}
+
+
+.card-container .card {
+    position: relative;
+    width: 340px;
+    min-height: 450px;
+    border-radius: 15px;
+    margin: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+    box-shadow: 0 14px 20px rgb(0, 0, 0, 0.5);
+    background-color: rgba(128, 126, 126, 0.45);
+    /* background-color: rgba(1, 1, 8, 0.6); */
+
+    border: 2px solid rgb(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 20px 5px rgb(0, 0, 0, 0.4);
+    /* background-image: url(class.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    opacity: 1;
+    
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background-color: rgba(1, 1, 8, 0.6);
+    /* background-color: rgba(128, 126, 126, 0.45); */
+    /* opacity: 2; */
+    box-shadow: 25px 25px 15px rgb(0, 0, 0, 0.4);
+
+}
+
+.card:hover .card-content{
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-content {
+    color: black;
+    /* color: white; */
+    padding: 12px;
+}
+
+.news-source{
+    margin-block: 15px;
+}
+
+
+body{
+    font-family: sans-serif;
+    /* color: #183b56; */
+    /* background: #161623; */
+    /* background: url(newsBackgriund.jpg) no-repeat */
+    background-image: url(gll.avif);
+    background-position: center;
+    /* background: no-repeat; */
+    /* background-size: cover; */
+    /* background-color: rgb(255, 255, 255,0.1); */
+    /* background-image: linear-gradient(to right, #9796f0, #fbc7d4); */
+    /* body { */
+        /* background: linear-gradient(to right, #917173, #2a3b36, #432c52); */
+        /* height: 100vh; */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* background-image: url(glassback.jpg);
+        background: no-repeat;
+        background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-color: #65a0ff; */
+  /* background-size: cover; */
+  background-size: 1560px 513px;
+  background-position-x: 0px;
+  background-position-y: 70px;
+}
